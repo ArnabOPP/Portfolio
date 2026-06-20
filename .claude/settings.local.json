@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__tavily__tavily_extract",
+      "mcp__tavily__tavily_search",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s \"https://api.github.com/users/ArnabOPP/repos?per_page=100\")",
+      "Bash(python -c \"import json,sys; repos=json.load\\(sys.stdin\\); [print\\(r['name'], '|', r.get\\('description',''\\) or '', '|', r.get\\('html_url',''\\)\\) for r in repos]\")",
+      "WebSearch",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)"
+    ]
+  }
+}
