@@ -138,9 +138,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/about/pp3.jpg" type="image/jpeg" />
-        <link rel="shortcut icon" href="/about/pp3.jpg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/about/pp3.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
