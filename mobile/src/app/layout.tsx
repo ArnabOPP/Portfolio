@@ -103,9 +103,9 @@ export const metadata: Metadata = {
     google: "uWFi9RAaIdfR7iV-A_7EiCcxcAwp09fN4HdNvYPNPx4",
   },
   icons: {
-    icon: "/about/ArnabCh.jpeg",
-    shortcut: "/about/ArnabCh.jpeg",
-    apple: "/about/ArnabCh.jpeg",
+    icon: "/about/pp3.jpg",
+    shortcut: "/about/pp3.jpg",
+    apple: "/about/pp3.jpg",
   },
 };
 
@@ -138,9 +138,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/about/ArnabCh.jpeg" type="image/jpeg" />
-        <link rel="shortcut icon" href="/about/ArnabCh.jpeg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/about/ArnabCh.jpeg" />
+        <link rel="icon" href="/about/pp3.jpg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/about/pp3.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/about/pp3.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
