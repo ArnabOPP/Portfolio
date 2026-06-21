@@ -184,6 +184,9 @@ export default async function RootLayout({
     return (
         <html lang={locale} data-scroll-behavior="smooth" suppressHydrationWarning>
             <head>
+                <link rel="icon" href="/about/pp3.jpg" type="image/jpeg" />
+                <link rel="shortcut icon" href="/about/pp3.jpg" type="image/jpeg" />
+                <link rel="apple-touch-icon" href="/about/pp3.jpg" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
