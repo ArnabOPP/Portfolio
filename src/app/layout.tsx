@@ -83,6 +83,7 @@ export const viewport: Viewport = {
 import { ThemeAwareClickSpark } from '@/components/ui/ThemeAwareClickSpark';
 import { ConditionalNavigation } from '@/components/layout/ConditionalNavigation';
 import { ChatBot } from '@/components/layout/ChatBot';
+import { MobileRedirect } from '@/components/MobileRedirect';
 
 export default async function RootLayout({
     children,
@@ -99,6 +100,7 @@ export default async function RootLayout({
                     <I18nProvider locale={locale} messages={messages}>
                         <SmoothScrollProvider>
                             <ThemeAwareClickSpark>
+                                <MobileRedirect />
                                 <ConditionalNavigation>
                                     {children}
                                 </ConditionalNavigation>
