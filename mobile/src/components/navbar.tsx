@@ -170,6 +170,33 @@ export default function Navbar() {
           <Tooltip>
             <TooltipTrigger asChild>
               <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted backdrop-blur-3xl border border-border transition-colors">
+                <a
+                  href="https://arnabchatterjee.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="size-full flex items-center justify-center"
+                  title="Desktop Version"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </a>
+              </DockIcon>
+            </TooltipTrigger>
+            <TooltipContent
+              side="top"
+              sideOffset={8}
+              className="rounded-xl bg-primary text-primary-foreground px-4 py-2 text-sm shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)] dark:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]"
+            >
+              <p>Desktop Version</p>
+              <TooltipArrow className="fill-primary" />
+            </TooltipContent>
+          </Tooltip>
+          <Separator
+            orientation="vertical"
+            className="h-2/3 m-auto w-px bg-border"
+          />
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted backdrop-blur-3xl border border-border transition-colors">
                 <ModeToggle className="size-full cursor-pointer" />
               </DockIcon>
             </TooltipTrigger>
