@@ -110,9 +110,9 @@ export const metadata: Metadata = {
         },
     },
     icons: {
-        icon: '/favicon.svg',
-        shortcut: '/favicon.svg',
-        apple: '/about/ArnabCh.jpeg',
+        icon: '/about/pp3.jpg',
+        shortcut: '/about/pp3.jpg',
+        apple: '/about/pp3.jpg',
     },
     verification: {
         google: '',
