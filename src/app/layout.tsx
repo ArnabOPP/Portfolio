@@ -115,7 +115,7 @@ export const metadata: Metadata = {
         apple: '/about/pp3.jpg',
     },
     verification: {
-        google: '',
+        google: 'uWFi9RAaIdfR7iV-A_7EiCcxcAwp09fN4HdNvYPNPx4',
     },
 };
 
