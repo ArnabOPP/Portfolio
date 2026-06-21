@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import { DesktopRedirect } from "@/components/desktop-redirect";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -89,6 +90,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <LanguageProvider>
+            <DesktopRedirect />
             <TooltipProvider delayDuration={0}>
               <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
                 <FlickeringGrid
