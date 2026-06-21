@@ -205,6 +205,16 @@ export function Navbar() {
                         {/* Controls */}
                         <div className="flex items-center gap-2 md:gap-3">
 
+                            <a
+                                href="https://arnaborwhat.vercel.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hidden lg:flex items-center gap-1.5 px-4 py-2 rounded-full bg-muted/80 hover:bg-muted transition-colors text-xs font-semibold text-muted-foreground hover:text-foreground"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+                                Mobile
+                            </a>
+
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
@@ -311,6 +321,14 @@ export function Navbar() {
                                     transition={{ delay: 0.5 }}
                                     className="flex items-center gap-4 mt-12"
                                 >
+                                        <a
+                                        href="https://arnaborwhat.vercel.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="px-6 py-3 rounded-full glass-card text-sm font-medium hover:bg-muted/50 transition-colors"
+                                    >
+                                        📱 Mobile Version
+                                    </a>
                                     <button
                                         onClick={toggleLocale}
                                         className="px-6 py-3 rounded-full glass-card text-sm font-medium hover:bg-muted/50 transition-colors"
