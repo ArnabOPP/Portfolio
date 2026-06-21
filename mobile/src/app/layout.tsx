@@ -22,20 +22,63 @@ const geistMono = Geist_Mono({
   variable: "--font-mono",
 });
 
+const BASE_URL = "https://arnaborwhat.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.en.url),
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: DATA.en.name,
-    template: `%s | ${DATA.en.name}`,
+    default: "Arnab Chatterjee | AI Engineer & Full Stack Developer",
+    template: "%s | Arnab Chatterjee",
   },
-  description: DATA.en.description,
+  description:
+    "Arnab Chatterjee — B.Tech CSE (AIML) student at IEM Saltlake, Kolkata. Building AI systems, full-stack web apps, IoT & embedded hardware, and cross-platform mobile apps. Founder of ENGImitra. Neo4j Certified. Google Cloud GenAI Academy graduate.",
+  keywords: [
+    "Arnab Chatterjee",
+    "AI Engineer",
+    "Full Stack Developer",
+    "IEM Saltlake",
+    "Kolkata",
+    "Machine Learning",
+    "Deep Learning",
+    "TensorFlow",
+    "LangChain",
+    "Next.js",
+    "React",
+    "Python",
+    "FastAPI",
+    "Flutter",
+    "ESP32",
+    "IoT",
+    "MQTT",
+    "TFLite",
+    "Ollama",
+    "Neo4j",
+    "ENGImitra",
+    "Google Cloud",
+    "portfolio",
+    "developer India",
+  ],
+  authors: [{ name: "Arnab Chatterjee", url: BASE_URL }],
+  creator: "Arnab Chatterjee",
+  publisher: "Arnab Chatterjee",
+  category: "technology",
+  alternates: { canonical: BASE_URL },
   openGraph: {
-    title: `${DATA.en.name}`,
-    description: DATA.en.description,
-    url: DATA.en.url,
-    siteName: `${DATA.en.name}`,
+    title: "Arnab Chatterjee | AI Engineer & Full Stack Developer",
+    description:
+      "B.Tech CSE (AIML) at IEM Saltlake. Building AI systems, full-stack apps, IoT hardware, and mobile apps. Founder of ENGImitra.",
+    url: BASE_URL,
+    siteName: "Arnab Chatterjee Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/about/ArnabCh.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Arnab Chatterjee — AI Engineer & Full Stack Developer",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -49,29 +92,42 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.en.name}`,
+    title: "Arnab Chatterjee | AI Engineer & Full Stack Developer",
+    description:
+      "B.Tech CSE (AIML) at IEM Saltlake. Building AI systems, full-stack apps, IoT hardware, and mobile apps.",
     card: "summary_large_image",
+    creator: "@ARNABintheCHAT",
+    images: ["/about/ArnabCh.jpeg"],
   },
   verification: {
-    google: "",
-    yandex: "",
+    google: "uWFi9RAaIdfR7iV-A_7EiCcxcAwp09fN4HdNvYPNPx4",
   },
   icons: {
-    icon: [
-      {
-        url: "/about/ArnabCh.jpeg",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/about/ArnabCh.jpeg",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/about/ArnabCh.jpeg",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
+    icon: "/about/ArnabCh.jpeg",
+    shortcut: "/about/ArnabCh.jpeg",
+    apple: "/about/ArnabCh.jpeg",
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Arnab Chatterjee",
+  url: BASE_URL,
+  image: `${BASE_URL}/about/ArnabCh.jpeg`,
+  sameAs: [
+    "https://github.com/ArnabOPP",
+    "https://linkedin.com/in/arnab-chatterjee-opp",
+    "https://twitter.com/ARNABintheCHAT",
+  ],
+  jobTitle: "AI Engineer & Full Stack Developer",
+  description:
+    "B.Tech CSE (AIML) student at IEM Saltlake, Kolkata. Building AI systems, full-stack apps, IoT hardware, and mobile apps.",
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Institute of Engineering & Management (IEM), Saltlake",
+  },
+  email: "arnabchatterjee281205@gmail.com",
 };
 
 export default function RootLayout({
@@ -81,6 +137,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/about/ArnabCh.jpeg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/about/ArnabCh.jpeg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/about/ArnabCh.jpeg" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased relative",
